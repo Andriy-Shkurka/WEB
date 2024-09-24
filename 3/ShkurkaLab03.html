@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab3</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .table-container {
+            margin: 20px auto;
+            width: 85%;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+            font-weight: bold;
+        }
+
+        td {
+            background-color: #fafafa;
+        }
+
+        .left {
+            text-align: left;
+        }
+
+        .right {
+            text-align: right;
+        }
+
+        .blue-table {
+            background-color: #add8e6;
+            border: 2px double #000;
+            margin-top: 20px;
+            border-radius: 8px;
+        }
+
+        .blue-table td {
+            padding: 12px;
+            background-color: #e0f7fa;
+            color: #000;
+        }
+
+        caption {
+            font-size: 1.2em;
+            margin: 15px 0;
+            font-weight: bold;
+        }
+
+        /* Hover effects */
+        table tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        .table-container table.blue-table tr:hover {
+            background-color: #b3e5fc;
+        }
+
+        /* Responsive design */
+        @media only screen and (max-width: 768px) {
+            .table-container {
+                width: 95%;
+            }
+
+            th, td {
+                padding: 10px;
+            }
+
+            .blue-table {
+                margin: 0;
+                width: 100%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Перша таблиця -->
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="2">Заголовок</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="left" style="width: 25%;">Дані, вирівняні по лівому краю</td>
+                    <td class="right" style="width: 75%;">Дані вирівняно по правому краю</td>
+                </tr>
+                <tr>
+                    <td class="left">25% ширини таблиці</td>
+                    <td class="left">75% ширини таблиці та вирівняно за лівим краєм</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Друга таблиця -->
+    <div class="table-container">
+        <table class="blue-table">
+            <tbody>
+                <tr>
+                    <td>Текст 1</td>
+                    <td>Текст 2</td>
+                    <td>Текст 3</td>
+                    <td>Текст 4</td>
+                </tr>
+                <tr>
+                    <td>Текст 5</td>
+                    <td>Текст 6</td>
+                    <td>Текст 7</td>
+                    <td>Текст 8</td>
+                </tr>
+                <tr>
+                    <td>Текст 9</td>
+                    <td>Текст 10</td>
+                    <td>Текст 11</td>
+                    <td>Текст 12</td>
+                </tr>
+                <tr>
+                    <td>Текст 13</td>
+                    <td>Текст 14</td>
+                    <td>Текст 15</td>
+                    <td>Текст 16</td>
+                </tr>
+                <tr>
+                    <td>Текст 17</td>
+                    <td>Текст 18</td>
+                    <td>Текст 19</td>
+                    <td>Текст 20</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Третя таблиця -->
+    <div class="table-container">
+        <table>
+            <tbody>
+                <tr>
+                    <td rowspan="2" colspan="2">Об'єднана комірка 1</td>
+                    <td>Комірка 3</td>
+                    <td>Комірка 4</td>
+                    <td>Комірка 5</td>
+                </tr>
+                <tr>
+                    <td>Комірка 6</td>
+                    <td>Комірка 7</td>
+                    <td>Комірка 8</td>
+                </tr>
+                <tr>
+                    <td colspan="3">Об'єднана комірка 2</td>
+                    <td>Комірка 9</td>
+                    <td>Комірка 10</td>
+                </tr>
+                <tr>
+                    <td>Комірка 11</td>
+                    <td>Комірка 12</td>
+                    <td>Комірка 13</td>
+                    <td>Комірка 14</td>
+                    <td>Комірка 15</td>
+                </tr>
+                <tr>
+                    <td colspan="5">Об'єднана комірка 3</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Четверта таблиця -->
+    <div class="table-container">
+        <table>
+            <caption>Довільна таблиця з різним вирівнюванням</caption>
+            <thead>
+                <tr>
+                    <th>Стовпець 1</th>
+                    <th>Стовпець 2</th>
+                    <th>Стовпець 3</th>
+                    <th>Стовпець 4</th>
+                    <th>Стовпець 5</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Текст 1</td>
+                    <td class="left">Текст 2</td>
+                    <td class="right">Текст 3</td>
+                    <td>Текст 4</td>
+                    <td class="center">Текст 5</td>
+                </tr>
+                <tr>
+                    <td>Текст 6</td>
+                    <td>Текст 7</td>
+                    <td class="right">Текст 8</td>
+                    <td>Текст 9</td>
+                    <td>Текст 10</td>
+                </tr>
+                <tr>
+                    <td class="left">Текст 11</td>
+                    <td>Текст 12</td>
+                    <td>Текст 13</td>
+                    <td class="center">Текст 14</td>
+                    <td>Текст 15</td>
+                </tr>
+                <tr>
+                    <td>Текст 16</td>
+                    <td class="left">Текст 17</td>
+                    <td>Текст 18</td>
+                    <td class="right">Текст 19</td>
+                    <td>Текст 20</td>
+                </tr>
+                <tr>
+                    <td>Текст 21</td>
+                    <td>Текст 22</td>
+                    <td class="center">Текст 23</td>
+                    <td>Текст 24</td>
+                    <td class="left">Текст 25</td>
+                </tr>
+                <tr>
+                    <td>Текст 26</td>
+                    <td>Текст 27</td>
+                    <td>Текст 28</td>
+                    <td>Текст 29</td>
+                    <td class="right">Текст 30</td>
+                </tr>
+                <tr>
+                    <td class="center">Текст 31</td>
+                    <td>Текст 32</td>
+                    <td class="left">Текст 33</td>
+                    <td>Текст 34</td>
+                    <td>Текст 35</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>

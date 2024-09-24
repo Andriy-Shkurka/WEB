@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Спеціальності та їх характеристики</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f9; /* Світло-сірий фон */
+            color: #333; /* Темно-сірий текст */
+        }
+        .header {
+            text-align: center;
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 30px;
+            color: #0056b3; /* Синій колір для заголовка */
+        }
+        .container {
+            display: flex;
+            justify-content: space-between; /* Рівномірний розподіл */
+            flex-wrap: wrap; /* Перехід на новий ряд */
+        }
+        .column {
+            flex: 1;
+            padding: 15px;
+            margin: 10px;
+            background-color: #ffffff; /* Білий фон для колонок */
+            border-radius: 8px; /* Закруглені кути */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Тінь для колонок */
+        }
+        h2 {
+            font-size: 24px;
+            color: #333; /* Темно-сірий для підзаголовків */
+            margin-bottom: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #007bff; /* Синій фон для заголовків таблиці */
+            color: white; /* Білий текст для заголовків таблиці */
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9; /* Світло-сірий фон для парних рядків */
+        }
+        tr:hover {
+            background-color: #e9ecef; /* Світло-сірий при наведенні */
+        }
+    </style>
+</head>
+<body>
+    <div class="header">Спеціальності та їх характеристики</div>
+    <div class="container">
+        <div class="column">
+            <h2>Огляд спеціальностей</h2>
+            <p>В нашій навчальній установі пропонуються різні спеціальності, кожна з яких має свої унікальні характеристики. У даному матеріалі ми розглянемо три основні спеціальності: Комп'ютерна інженерія, Телекомунікації та радіотехніка, а також Електромеханіка.</p>
+            <p>Кожна спеціальність має свою кількість студентів та якість успішності, що дозволяє оцінити популярність та ефективність навчання.</p>
+        </div>
+        <div class="column">
+            <h2>Таблиця характеристик</h2>
+            <table>
+                <tr>
+                    <th>Спеціальність</th>
+                    <th>Кількість студентів</th>
+                    <th>Якість успішності</th>
+                </tr>
+                <tr>
+                    <td>Комп'ютерна інженерія</td>
+                    <td>250</td>
+                    <td>80%</td>
+                </tr>
+                <tr>
+                    <td>Телекомунікації та радіотехніка</td>
+                    <td>200</td>
+                    <td>75%</td>
+                </tr>
+                <tr>
+                    <td>Електромеханіка</td>
+                    <td>150</td>
+                    <td>85%</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
