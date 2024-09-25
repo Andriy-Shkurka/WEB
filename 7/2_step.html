@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>лаб_роб_5</title>
+    <link rel="stylesheet" href="css/style_2.css">
+</head>
+
+<header>
+    <h1>Оформлення замовлення</h1>
+</header>
+
+<body>
+    <h4>Введіть інформацію:</h4>
+
+    <form action="index.html" method="GET" target="_blank">
+        <table align="center">
+     
+            <tr>
+             <td width="40%">
+                 <br>Номер банківського рахунку
+             </td>
+             <td width="60%">
+         <div>
+             <input placeholder="Карта" name="card" type="text">
+         </div>
+             </td>
+            </tr>
+  
+            <tr>
+                <td width="40%">
+                    <br>Особистий номер користувача
+                </td>
+        
+                <td width="60%">   
+                <div>
+                    <input value="Номер" name="namber" type="text">
+                </div>
+                </td>
+            </tr>
+
+            <tr>
+             <td width="40%">
+                 <br>Список товарів
+             </td>
+             <td width="60%">  
+             <div>
+                <input type="checkbox" name="tovar" value="">Mazda RX-7 <br>
+                <input type="checkbox" name="tovar" value="">BMW M3 <br>
+                <input type="checkbox" name="tovar" value="">Dodge RAM <br>
+                <input type="checkbox" name="tovar" value="">Mitsubisi Lanser <br>
+                <input type="checkbox" name="tovar" value="">Opel Astra <br>
+             </div>
+             </td>
+            </tr>
+         
+            <tr>
+             <td width="40%">
+                 <br>Довільні коментарі
+             </td>
+             <td width="60%">
+             <div>
+                 <textarea placeholder="Коментарі" name="coment" cols="30" rows="10"></textarea>
+             </div>
+             </td>
+            </tr>
+     
+
+     
+         <tr>
+             <td width="40%">
+                 <br>Вид оплати
+             </td>
+     
+             <td width="60%">   
+             <div>
+                <input type="radio" name="pay" value="1">Готівковий 
+                <input type="radio" name="pay" value="2">Безготівковий
+             </div>
+             </td>
+         </tr>
+     
+         <tr>
+             <td width="40%">
+                 <br>Виберіть додаткові функції
+             </td>
+     
+             <td width="60%">   
+             <div>
+                <input type="checkbox" name="tovar" value="">Дані про залишки на рахунку<br>
+                <input type="checkbox" name="tovar" value="">Останні виплати на рахунку<br>
+             </div>
+             </td>
+         </tr>
+
+
+         <tr>
+             <td class="do" colspan="2">
+                 <div class="do_1">
+                     <input class="res" type="reset" value="Очистити">
+                 </div>
+                 <button  type="submit">Оформити замовлення</button>
+             </td>
+         </tr>
+
+         </table>
+    </form>
+
+</body>
+</html>

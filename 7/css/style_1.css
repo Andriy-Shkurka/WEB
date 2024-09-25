@@ -1,0 +1,69 @@
+    h1, h4
+    {
+        text-align: center;
+    }
+    button, .res
+    {
+        background-color: rgb(49, 45, 45);
+        color: rgb(199, 171, 171);
+    }
+    button:hover, .res:hover
+    {
+        background-color: rgb(135, 76, 76);
+    }
+    table
+    {
+        border: 3px solid #746160;
+    }
+    td,th
+    {
+        border: 2px solid #746160;
+    }
+    .do
+    {
+        text-align: center;
+    }
+    a
+    {
+        text-decoration: none;
+        color: rgb(199, 171, 171);
+    }
+    ::placeholder
+    {
+        color:rgb(0, 0, 0);
+    }
+    header 
+    {	
+        margin-right: 5%;
+        margin-left: 5%;
+        color: #fff;
+        padding: 1rem;
+     }
+     
+     main 
+     {
+        margin:2%;
+        margin-right: 5%;
+        margin-left: 5%;
+        position:relative;
+        min-height: 100%;
+        padding-bottom: 150px;
+        background: rgba(0, 0, 0, 0.3); /* Полупрозрачный фон */
+        padding: 1rem;
+     }
+     
+     footer 
+     {
+        margin:0 auto;
+        background: #000;
+        color: #fff;
+        overflow: visible;
+        padding: 1rem;
+     }
+     body
+     {
+        background-image: url(https://www.chromethemer.com/download/hd-wallpapers/atomic-black-2560x1440.jpg);
+        background-size: cover;
+        color: white;
+     }
+     
