@@ -1,0 +1,484 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #333;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222;
+    padding: 15px;
+}
+
+/* Логотип */
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    width: 40px;
+    height: auto;
+    margin-right: 10px;
+}
+
+header .logo span {
+    font-size: 24px;
+    color: #ffcc00;
+}
+
+header nav {
+    display: flex; /* Використовуємо flexbox для вирівнювання елементів */
+    justify-content: space-between; /* Між елементами буде рівний простір */
+    align-items: center; /* Вирівнюємо елементи по вертикалі */
+    padding: 10px 20px;
+    position: relative;
+}
+
+/* Основне меню у вигляді таблиці */
+header nav table {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+header nav td {
+    text-align: center;
+    padding: 10px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+header nav a:hover {
+    background-color: #555;
+}
+
+/* Стилі для логотипа */
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-align: left; /* Логотип вирівняний зліва */
+}
+
+
+
+/*----------------------------------------------------------------------*/
+
+
+
+/* Стилі для мобільного меню */
+menu-icon {
+    display: none;
+}
+
+.menu-icon img {
+    width: 30px;
+    height: auto;
+}
+
+/* Показуємо меню, коли додається клас "active" */
+header nav.active {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.9); /* Напівпрозорий чорний фон */
+    z-index: 1000;
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Плавна анімація */
+}
+
+header nav.active table {
+    display: block;
+    width: 100%;
+    margin-top: 50px;
+    text-align: center;
+}
+
+header nav.active td {
+    display: block;
+    padding: 20px;
+    width: 100%;
+}
+
+header nav.active a {
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 15px;
+}
+
+header nav.active a:hover {
+    background-color: #ffcc00;
+}
+
+header nav.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Кнопка відтворення (можна додати для прикладу) */
+#play-button {
+    background-color: #ffcc00;
+    color: #222;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+}
+
+/* Стилі для кнопки play */
+.play-button img {
+    width: 30px; /* Розмір картинки */
+    height: auto;
+}
+
+
+
+/*----------------------------------------------------------------------*/
+
+
+
+/* Приховуємо кнопку меню за замовчуванням */
+#menu-icon {
+    display: none; /* Кнопка меню буде прихована в стандартному вигляді */
+    cursor: pointer;
+}
+
+#menu {
+    display: none; /* Спочатку меню приховане */
+    position: absolute;
+    top: 60px; /* Відстань від верху екрану */
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 20px;
+    box-sizing: border-box;
+    z-index: 999;
+    transform: translateY(-20px); /* Початкове положення для анімації */
+    transition: transform 0.3s ease-in-out; /* Анімація при відкритті */
+}
+
+/* Клас для відкритого меню */
+#menu.open {
+    display: block;
+    transform: translateY(0); /* Коли меню відкрито, воно з'являється */
+}
+
+/* Пункти меню */
+#menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#menu ul li {
+    margin: 15px 0;
+    font-size: 18px;
+}
+
+#menu ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+/* Стилі для кнопки закриття */
+.close-menu {
+    display: none; /* Кнопка закриття прихована за замовчуванням */
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #ffcc00;
+    color: #222;
+    border: none;
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    z-index: 1010; /* Забезпечує видимість кнопки поверх меню */
+}
+
+.close-menu:hover {
+    background-color: #ff9900;
+}
+
+
+
+/* Horizontal Menu */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+/* Sections */
+.section {
+    margin: 20px;
+    padding: 0 15px;
+}
+
+.section h2 {
+    font-size: 20px;
+    color: #ffcc00;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+
+
+
+/*----------------------------------------------------------------------*/
+
+
+
+
+/* Responsive Gallery */
+.gallery {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto; /* Enables horizontal scroll */
+    padding: 10px 0;
+    scroll-snap-type: x mandatory; /* Smooth scrolling */
+}
+
+.gallery a {
+    flex: 0 0 150px; /* Fixed width for each item in horizontal scroll */
+    text-decoration: none;
+    color: #fff;
+    background-color: #444;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: background-color 0.3s;
+    scroll-snap-align: start;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.gallery a:hover {
+    background-color: #555;
+}
+
+.gallery span {
+    margin-top: 8px;
+    font-size: 14px;
+}
+
+
+
+
+/*----------------------------------------------------------------------*/
+
+
+
+
+/* Основні стилі для футера */
+footer {
+    background-color: #222;
+    padding: 15px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between; /* Рівномірний розподіл між блоками */
+    align-items: center; /* Вертикальне вирівнювання по центру */
+    flex-wrap: wrap; /* Дозволяє переносити блоки на новий рядок на малих екранах */
+    text-align: left;
+    gap: 50px; /* Встановлюємо відстань між блоками 50px */
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 150px; /* Мінімальна ширина кожного блоку, щоб не стиснути контент */
+    max-width: 300px; /* Максимальна ширина, щоб блоки не розтягувалися занадто сильно */
+    text-align: center; /* Центруємо текст у кожному блоці */
+    margin: 0; /* Забираємо додаткові відступи */
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    color: #ffcc00;
+    margin-bottom: 8px; /* Відступ між заголовком і списком */
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+}
+
+.footer-section a {
+    color: #ffcc00;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+/* Мобільні стилі для футера */
+@media (max-width: 768px) {
+    footer {
+        justify-content: center; /* Центруємо футер на мобільних */
+        flex-direction: column; /* Розташування футера в стовпчик на малих екранах */
+    }
+
+    .footer-section {
+        margin: 5px 0; /* Зменшена відстань між блоками на мобільних */
+        width: 100%; /* Розтягуємо блоки на всю ширину */
+    }
+
+    nav ul {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* Два рядки по три елементи */
+        gap: 10px;
+    }
+
+    nav ul li {
+        margin: 0; /* Прибираємо відступи між елементами */
+        text-align: center;
+    }
+
+
+    /*----------------------------------------------------------------------*/
+
+
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* Приховуємо меню за замовчуванням на мобільних пристроях */
+    header nav table {
+        display: none;
+    }
+
+    /* Показуємо меню, коли додається клас "active" */
+    header nav.active table {
+        display: block;
+        text-align: center;
+        width: 100%;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    /* Зменшення розмірів елементів меню */
+    header nav td {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    header nav td a {
+        padding: 8px 12px;
+    }
+
+    header nav {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+
+
+    /*----------------------------------------------------------------------*/
+
+
+    
+    /* Клас для відкритого меню */
+    #menu.open {
+        display: block;
+        transform: translateY(0); /* Коли меню відкрито, воно з'являється */
+    }
+    
+    #menu {
+        display: none; /* Меню приховане за замовчуванням */
+        position: absolute;
+        top: 60px; /* Відстань від верху */
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        padding: 20px;
+        box-sizing: border-box;
+        z-index: 999;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    
+    #menu-icon {
+        display: block;
+        background-color: #ffcc00;
+        color: #222;
+        padding: 10px 20px;
+        font-size: 18px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    
+    /* Зміни в мобільному меню */
+    #menu ul li {
+        font-size: 16px; /* Менший шрифт для мобільного меню */
+    }
+
+    /* Зменшуємо розмір кнопок і відстані для мобільного вигляду */
+    header .logo {
+        font-size: 18px; /* Зменшити розмір шрифта для логотипа */
+    }
+
+    #play-button {
+        padding: 8px 16px;
+        font-size: 16px;
+    }
+
+    /* Зменшення розміру кнопки закриття та розділів меню */
+    .close-menu {
+        padding: 6px 12px;
+        font-size: 14px;
+        top: 10px;
+        right: 10px;
+    }
+}
