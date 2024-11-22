@@ -1,0 +1,100 @@
+/* Общее оформление для всех страниц */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #eaeaea;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header, footer {
+    background-color: #444;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    background-color: #333;
+}
+
+nav a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #1abc9c;
+}
+
+.main {
+    flex: 1;
+    padding: 20px 40px; /* Відстань ліворуч та праворуч */
+    background-image: url('img/1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #333;
+}
+
+h1 {
+    font-weight: bold; /* Жирний стиль для заголовка */
+    text-align: center; /* Вирівнювання по центру */
+    color: #2c3e50; /* Задаємо колір */
+    font-style: normal; /* Нормальний стиль */
+}
+
+p {
+    margin: 20px 0;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-align: justify;
+    text-indent: 20px; /* Червоний рядок */
+    font-style: italic; /* Курсивний стиль тексту */
+}
+
+p::first-line {
+    color: red; /* Червоний колір для першого рядка абзацу */
+}
+
+footer {
+    margin-top: auto;
+    background-color: #333;
+    color: white;
+}
+
+a {
+    color: #1E90FF;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #9400D3;
+}
+
+a:hover {
+    color: #FF4500;
+}
+
+a:active {
+    color: #32CD32;
+}
