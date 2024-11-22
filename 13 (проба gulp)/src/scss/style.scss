@@ -1,0 +1,154 @@
+// Variables
+$primary-color: #ffcc00;
+$dark-bg: #333;
+$dark-header-bg: #222;
+$light-bg: #444;
+$hover-bg: #555;
+$font-family: Arial, sans-serif;
+$small-screen: 768px;
+$extra-small-screen: 480px;
+
+// General Styles
+body {
+    font-family: $font-family;
+    background-color: $dark-bg;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: $dark-header-bg;
+    padding: 15px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 24px;
+    color: $primary-color;
+    margin: 0;
+}
+
+// Horizontal Menu
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: $hover-bg;
+}
+
+// Sections
+.section {
+    margin: 20px;
+    padding: 0 15px;
+}
+
+.section h2 {
+    font-size: 20px;
+    color: $primary-color;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+// Responsive Gallery
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 15px;
+}
+
+.gallery a {
+    text-decoration: none;
+    color: #fff;
+    background-color: $light-bg;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.gallery a:hover {
+    background-color: $hover-bg;
+}
+
+.gallery span {
+    margin-top: 8px;
+    font-size: 14px;
+}
+
+// Responsive Adjustments
+@media (max-width: $small-screen) {
+    header h1 {
+        font-size: 20px;
+    }
+
+    nav ul li {
+        margin: 5px 5px;
+    }
+
+    nav ul li a {
+        padding: 5px;
+    }
+
+    .section h2 {
+        font-size: 18px;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+        gap: 10px;
+    }
+}
+
+@media (max-width: $extra-small-screen) {
+    header h1 {
+        font-size: 18px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    .section h2 {
+        font-size: 16px;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+        gap: 8px;
+    }
+
+    .gallery span {
+        font-size: 12px;
+    }
+}
