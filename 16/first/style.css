@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fa;
+    color: #333;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+header p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+.images {
+    text-align: center;
+}
+
+.image-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.images img {
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.images img:hover {
+    transform: scale(1.05);
+}
+
+.links ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.links a {
+    color: #007BFF;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 1.2rem;
+    display: inline-block;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color:#ccc;
+    transition: background-color 0.3s ease;
+}
+
+.links a:hover {
+    background-color: #007BFF;
+    color: #fff;
+}
+
+.inputs .input-group {
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+}
+
+.inputs input {
+    padding: 10px;
+    font-size: 1.2rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 30%;
+    transition: border-color 0.3s ease;
+}
+
+.inputs input:focus {
+    border-color: #007BFF;
+}
+
+#demo {
+    font-size: 1.2rem;
+    margin-top: 15px;
+    color: #444;
+}
+
+.paragraphs .paragraph-group {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.paragraphs p {
+    font-size: 1.5rem;
+    cursor: pointer;
+    background-color:#ccc;
+    padding: 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.paragraphs p:hover {
+    background-color: #d9d9d9;
+}
