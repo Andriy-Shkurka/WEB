@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задачі на JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Задачі на JavaScript</h1>
+        
+        <h2>1. Остаток від ділення</h2>
+        <input type="number" id="totalSeconds" placeholder="Введіть кількість секунд">
+        <button onclick="calculateSeconds()">Обчислити</button>
+        <span id="secondsResult"></span>
+        
+        <h2>2. Периметр багатокутника</h2>
+        <input type="number" id="sideInput" placeholder="Довжина сторони">
+        <input type="number" id="countInput" placeholder="Кількість сторін">
+        <button onclick="calculatePerimeter()">Розрахувати</button>
+        
+        <h2>3. fizzbuzz</h2>
+        <button onclick="runFizzBuzz()">Запустити FizzBuzz</button>
+        <div id="fizzbuzzResult"></div>
+
+        <h2>4. Середнє арифметичне</h2>
+        <input type="number" id="num1">
+        <input type="number" id="num2">
+        <input type="number" id="num3">
+        <button onclick="calculateAverage()">Розрахувати</button>
+        
+        <h2>5. Перевірка на подільність</h2>
+        <input type="number" id="divNum">
+        <input type="number" id="divX">
+        <input type="number" id="divY">
+        <button onclick="checkDivisibility()">Перевірити</button>
+        
+        <h2>6. Масив</h2>
+        <button onclick="generateAndProcessArray()">Згенерувати та обробити масив</button>
+        <div id="arrayOutput"></div>
+        
+        <h2>7. Масив 5х5</h2>
+        <button onclick="generateAndProcessMatrix()">Згенерувати та обробити матрицю</button>
+        <div id="matrixOutput"></div>
+
+        <h2>8. Калькулятор</h2>
+        <input type="number" id="calcNum1">
+        <select id="operation">
+            <option value="add">+</option>
+            <option value="sub">-</option>
+            <option value="mul">*</option>
+            <option value="div">/</option>
+        </select>
+        <input type="number" id="calcNum2">
+        <button onclick="calculate()">=</button>
+        <span id="calcResult"></span>
+        
+        <h2>9. Аналіз числа</h2>
+        <input type="number" id="analyzeNum">
+        <button onclick="analyzeNumber()">Аналіз</button>
+        
+        <h2>10. Перевернути масив</h2>
+        <input type="text" id="reverseArrayInput" placeholder="Введіть елементи через кому">
+        <button onclick="reverseAndSquareArray()">Перевернути</button>
+        <span id="reversedArrayResult"></span>
+        
+        <h2>11. Видалення дублікатів</h2>
+        <input type="text" id="uniqueArrayInput" placeholder="Введіть елементи через кому">
+        <button onclick="removeDuplicatesArray()">Видалити дублікати</button>
+        <span id="uniqueArrayResult"></span>
+    </div>
+</body>
+</html>
