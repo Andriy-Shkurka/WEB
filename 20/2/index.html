@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Розрахунок електроенергії</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Розрахунок енергобалансу</h1>
+
+        <h2>Додати елемент</h2>
+        <select id="elementType">
+            <option value="powerPlant">Електростанція</option>
+            <option value="solarPanel">Сонячна панель</option>
+            <option value="residentialBuilding">Житловий будинок</option>
+            <option value="powerLine">Лінія електропередач</option>
+        </select>
+        <input type="text" id="elementName" placeholder="Назва">
+        <input type="number" id="elementValue" placeholder="Потужність / Кількість" min="1">
+        <input type="number" id="extraValue" placeholder="Ціна мегавата (для ліній)" min="0">
+        <button onclick="addElement()">Додати</button>
+
+        <h2>Список елементів</h2>
+        <ul id="elementsList"></ul>
+
+        <button onclick="calculateEnergyBalance()">Розрахувати баланс</button>
+        <div id="output" class="results"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
