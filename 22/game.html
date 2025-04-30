@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Гра</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="game-page">
+    <div class="game-container">
+        <div class="top-bar">
+            <span id="timer">60</span> секунд
+            <button id="restartBtn">Почати з початку</button>
+        </div>
+        
+        <div id="gameField" class="game-field"></div>
+
+        <div id="statistics">
+            <h2>Статистика</h2>
+            <table id="resultsTable">
+                <thead>
+                    <tr>
+                        <th>Спроба</th>
+                        <th>Час (сек)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Додається динамічно -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>

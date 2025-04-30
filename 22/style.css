@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container, .game-container {
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#gameField {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    max-width: 500px;
+    margin: 0 auto 30px;
+}
+
+.number {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    user-select: none;
+    transition: 0.3s;
+}
+
+.number.correct {
+    background-color: lightgreen;
+}
+
+#statistics {
+    margin-top: 30px;
+}
+
+#resultsTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#resultsTable th, #resultsTable td {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.best {
+    background-color: #ffd700;
+}
